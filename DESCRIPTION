@@ -1,0 +1,27 @@
+Package: safeConverter
+Type: Package
+Title:  Library that provides convertion between various data formats that focus on not loosing any information. 
+Version: 0.1.0
+Author: Adam Ryczkowski
+Maintainer: <adam@statystyka.net>
+Description: Provides functions that convert from one vector type into other, reporting all possible warnings and errors using the dbcasereport mechanism.
+    Support convertion between integers, factors, labelled (including tagged NA), Date and POSIXct. 
+License: GNU GPL 3
+Encoding: UTF-8
+LazyData: true
+Imports:
+	  haven,
+	  labelled,
+	  digest,
+	  checkmate,
+	  purrr,
+	  dbcasereport,
+	  itemNaming
+Suggests:
+    testthat
+Depends:
+    data.table
+Remotes: 
+  adamryczkowski/dbcasereport,
+  adamryczkowski/itemNaming
+RoxygenNote: 5.0.1
